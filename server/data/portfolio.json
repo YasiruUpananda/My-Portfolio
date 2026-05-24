@@ -11,18 +11,18 @@
     "socials": [
       {
         "id": "github",
-        "url": "https://github.com",
+        "url": "https://github.com/YasiruUpananda",
         "label": "GitHub"
       },
       {
         "id": "linkedin",
-        "url": "https://linkedin.com",
+        "url": "https://www.linkedin.com/in/yasiru-upananda/",
         "label": "LinkedIn"
       },
       {
-        "id": "twitter",
-        "url": "https://twitter.com",
-        "label": "Twitter"
+        "id": "medium",
+        "url": "https://medium.com/@yasiru_upananda",
+        "label": "Medium"
       },
       {
         "id": "email",
@@ -189,52 +189,30 @@
   ],
   "projects": [
     {
-      "id": "devconnect",
-      "title": "DEVCONNECT",
-      "description": "Real-time developer networking platform with chat and collaboration features.",
-      "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=200&h=120&fit=crop",
+      "id": "smart-diet-sl",
+      "title": "SMART DIET SL",
+      "description": "Intelligent dietary health assistant and diet recommender application tailored for Sri Lankan users, helping monitor nutrition and body wellness.",
+      "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=400&h=250&fit=crop",
+      "tags": [
+        "React Native",
+        "Node.js",
+        "MongoDB",
+        "ML Recommendation"
+      ],
+      "url": "https://github.com/YasiruUpananda/Smart-Diet-SL"
+    },
+    {
+      "id": "tedx-uok",
+      "title": "TEDx UOK",
+      "description": "Official event platform and portal for TEDx University of Kelaniya, showcasing speakers, event schedule telemetry, and ticketing channels.",
+      "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&h=250&fit=crop",
       "tags": [
         "Next.js",
-        "Socket.io",
-        "MongoDB"
-      ],
-      "url": "#"
-    },
-    {
-      "id": "fintracker",
-      "title": "FINTRACKER",
-      "description": "Personal finance dashboard with expense tracking and analytics.",
-      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=120&fit=crop",
-      "tags": [
         "React",
-        "Node.js",
-        "PostgreSQL"
+        "Tailwind CSS",
+        "Vercel"
       ],
-      "url": "#"
-    },
-    {
-      "id": "taskforge",
-      "title": "TASKFORGE",
-      "description": "Kanban-style project management tool for agile teams.",
-      "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=200&h=120&fit=crop",
-      "tags": [
-        "TypeScript",
-        "Prisma",
-        "AWS"
-      ],
-      "url": "#"
-    },
-    {
-      "id": "aichat",
-      "title": "AI CHAT ASSISTANT",
-      "description": "LLM-powered chat interface with context memory and streaming.",
-      "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=200&h=120&fit=crop",
-      "tags": [
-        "Python",
-        "OpenAI",
-        "FastAPI"
-      ],
-      "url": "#"
+      "url": "https://github.com/YasiruUpananda/TEDx-UOK"
     }
   ],
   "traits": [

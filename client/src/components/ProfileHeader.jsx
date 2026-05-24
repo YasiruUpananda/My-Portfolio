@@ -19,9 +19,9 @@ const LinkedInIcon = (props) => (
   </svg>
 );
 
-const TwitterIcon = (props) => (
+const MediumIcon = (props) => (
   <svg {...props} viewBox="0 0 24 24" fill="currentColor">
-    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+    <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM21 12c0 3.54-1.51 6.42-3.38 6.42S14.25 15.54 14.25 12s1.51-6.42 3.38-6.42S21 8.46 21 12zm3 0c0 3.24-.5 5.87-1.1 5.87s-1.1-2.63-1.1-5.87.5-5.87 1.1-5.87 1.1 2.63 1.1 5.87z"/>
   </svg>
 );
 
@@ -35,7 +35,7 @@ const EmailIcon = (props) => (
 const socialIcons = {
   github: GitHubIcon,
   linkedin: LinkedInIcon,
-  twitter: TwitterIcon,
+  medium: MediumIcon,
   email: EmailIcon,
 };
 
@@ -73,7 +73,12 @@ export default function ProfileHeader({ profile, delay = 0 }) {
             </li>
             <li className="flex items-center gap-2 sm:gap-3">
               <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-hud-cyan shrink-0" />
-              <span>{profile.phone}</span>
+              <a
+                href={`tel:${profile.phone}`}
+                className="hover:text-hud-cyan transition-colors"
+              >
+                {profile.phone}
+              </a>
             </li>
             <li className="flex items-center gap-2 sm:gap-3">
               <CircleDot className="w-4 h-4 sm:w-5 sm:h-5 text-hud-yellow shrink-0" />

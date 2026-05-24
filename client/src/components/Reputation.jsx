@@ -16,7 +16,7 @@ export default function Reputation({ reputation, delay = 0 }) {
     <HudCard title="REPUTATION" delay={delay} className="flex-1">
       <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10 min-h-0 items-center">
         {/* Left Column: Title, Tagline and Progress Bars */}
-        <div className="flex flex-col justify-center h-full space-y-4 sm:space-y-6 md:pr-4 py-1">
+        <div className="flex flex-col justify-start md:justify-center h-full space-y-4 sm:space-y-6 md:pr-4 py-1">
           <div className="space-y-1">
             <h3 className="font-display text-lg sm:text-xl md:text-2xl font-extrabold text-hud-yellow tracking-wider leading-none">
               {reputation.title}

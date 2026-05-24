@@ -12,7 +12,7 @@ const iconMap = {
 export default function Achievements({ achievements, delay = 0 }) {
   return (
     <HudCard title="ACHIEVEMENTS" delay={delay} className="flex-1">
-      <ul className="flex-1 flex flex-col justify-center gap-4 sm:gap-5 md:gap-6">
+      <ul className="flex-1 flex flex-col justify-start md:justify-center gap-3 sm:gap-5 md:gap-6">
         {achievements.map((item, i) => {
           const Icon = iconMap[item.icon] || Trophy;
           return (

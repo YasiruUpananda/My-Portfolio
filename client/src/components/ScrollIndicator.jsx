@@ -38,7 +38,7 @@ export default function ScrollIndicator() {
     <nav
       className="fixed z-50 flex gap-1.5 sm:gap-2
         bottom-[max(0.75rem,env(safe-area-inset-bottom))] left-1/2 -translate-x-1/2
-        max-w-[calc(100vw-1.5rem)] overflow-x-auto px-2 py-1.5"
+        max-w-[calc(100vw-1.5rem)] overflow-x-auto no-scrollbar px-2 py-1.5"
       aria-label="Section navigation"
     >
       {SECTIONS.map((s) => (

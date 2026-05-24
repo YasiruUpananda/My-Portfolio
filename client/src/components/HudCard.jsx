@@ -153,7 +153,7 @@ export default function HudCard({ title, subtitle, children, className = "", del
 
         <div
           className={`flex-1 flex flex-col min-h-0 ${
-            fill ? "h-full overflow-hidden" : "overflow-y-auto pr-0.5 sm:pr-1"
+            fill ? "h-full md:overflow-hidden overflow-y-auto pr-0.5 sm:pr-1" : "overflow-y-auto pr-0.5 sm:pr-1"
           }`}
         >
           {children}

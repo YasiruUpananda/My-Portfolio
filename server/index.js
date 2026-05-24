@@ -38,7 +38,19 @@ try {
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
 app.get("/api/portfolio", (_req, res) => {
-  res.json(portfolio);
+  try {
+    const path1 = join(__dirname, "data", "portfolio.json");
+    const freshPortfolio = JSON.parse(readFileSync(path1, "utf-8"));
+    res.json(freshPortfolio);
+  } catch (err) {
+    try {
+      const path2 = join(process.cwd(), "server", "data", "portfolio.json");
+      const freshPortfolio = JSON.parse(readFileSync(path2, "utf-8"));
+      res.json(freshPortfolio);
+    } catch (e) {
+      res.json(portfolio);
+    }
+  }
 });
 
 app.get("/api/health", (_req, res) => {

@@ -401,7 +401,7 @@ function WelcomeHUD({ data, onStart }) {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0, scale: 1.05 }}
       transition={{ duration: 0.4 }}
-      className="relative h-[100dvh] flex flex-col p-3 sm:p-5 md:p-6 lg:p-8 overflow-hidden"
+      className="relative h-[100dvh] flex flex-col p-3 sm:p-5 md:p-6 lg:p-8 overflow-y-auto md:overflow-hidden"
     >
       <HudFrame />
 

@@ -5,7 +5,7 @@ import { resolveTechIcon } from "../data/techIcons";
 export default function TechStack({ techStack, delay = 0 }) {
   return (
     <HudCard title="TECH STACK" delay={delay} className="flex-1">
-      <div className="flex-1 flex items-center justify-center min-h-0 py-1">
+      <div className="flex-1 flex items-start md:items-center justify-center min-h-0 py-1">
         <div className="grid grid-cols-3 sm:grid-cols-5 gap-2 sm:gap-3 md:gap-4 w-full">
           {techStack.map((tech, i) => {
             const resolved = resolveTechIcon(tech);

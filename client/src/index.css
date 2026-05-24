@@ -146,6 +146,14 @@
     @apply min-h-[44px] min-w-[44px];
   }
 
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
   .scanlines::after {
     content: "";
     position: absolute;
@@ -205,5 +213,18 @@
       inset 0 0 20px rgba(0, 242, 255, 0.12);
     border-color: rgba(0, 242, 255, 0.9);
   }
+}
+
+/* Browser autofill overrides for dark theme */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-text-fill-color: #ffffff !important;
+  -webkit-box-shadow: 0 0 0px 1000px #0a0e17 inset !important;
+  box-shadow: 0 0 0px 1000px #0a0e17 inset !important;
+  transition: background-color 5000s ease-in-out 0s;
 }
 

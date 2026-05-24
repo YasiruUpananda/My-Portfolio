@@ -12,7 +12,7 @@ const iconMap = {
 export default function SpecialAbilities({ abilities, delay = 0 }) {
   return (
     <HudCard title="SPECIAL ABILITIES" delay={delay} className="flex-1">
-      <ul className="flex-1 flex flex-col justify-center gap-3 sm:gap-4 md:gap-5">
+      <ul className="flex-1 flex flex-col justify-start md:justify-center gap-3 sm:gap-4 md:gap-5">
         {abilities.map((ability, i) => {
           const Icon = iconMap[ability.icon] || Zap;
           return (

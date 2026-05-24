@@ -85,7 +85,7 @@ export default function Contact({ profile, delay = 0 }) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 h-full items-stretch min-h-0 overflow-y-auto">
         
         {/* Left Side: System Telemetry & Info */}
-        <div className="flex flex-col gap-4 justify-between h-full min-h-0">
+        <div className="flex flex-col gap-4 justify-between md:h-full h-auto min-h-0">
           <div className="space-y-4">
             <div className="bg-hud-bg/40 border border-hud-cyan/15 p-4 hud-clip-sm space-y-3">
               <div className="flex items-center gap-2 text-hud-yellow font-display text-xs tracking-wider">
@@ -122,7 +122,7 @@ export default function Contact({ profile, delay = 0 }) {
           </div>
 
           {/* Simulated Terminal Diagnostic Logs */}
-          <div className="flex-1 flex flex-col min-h-[140px] sm:min-h-[180px] bg-black/50 border border-hud-cyan/10 p-3 font-mono text-[10px] sm:text-xs text-hud-cyan/85 overflow-hidden hud-clip-sm">
+          <div className="h-[150px] md:h-auto md:flex-1 flex flex-col bg-black/50 border border-hud-cyan/10 p-3 font-mono text-[10px] sm:text-xs text-hud-cyan/85 overflow-hidden hud-clip-sm">
             <div className="flex items-center justify-between border-b border-hud-cyan/20 pb-1.5 mb-2 shrink-0">
               <div className="flex items-center gap-1.5">
                 <Terminal className="w-3.5 h-3.5 animate-pulse text-hud-cyan" />
@@ -143,7 +143,7 @@ export default function Contact({ profile, delay = 0 }) {
         </div>
 
         {/* Right Side: Comms Form Console */}
-        <form onSubmit={handleSubmit} className="flex flex-col justify-between h-full min-h-0 gap-4">
+        <form onSubmit={handleSubmit} className="flex flex-col justify-between md:h-full h-auto min-h-0 gap-4">
           <div className="space-y-3 sm:space-y-4">
             {/* Name Input */}
             <div className="flex flex-col gap-1">
