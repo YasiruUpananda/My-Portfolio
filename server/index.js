@@ -21,8 +21,8 @@ const portfolio = JSON.parse(
   readFileSync(join(__dirname, "data", "portfolio.json"), "utf-8")
 );
 
-// Initialize Resend with API Key
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Initialize Resend safely with API Key (prevents crash on startup if undefined)
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
 app.get("/api/portfolio", (_req, res) => {
   res.json(portfolio);
@@ -39,9 +39,10 @@ app.post("/api/contact", async (req, res) => {
   }
   console.log(`[CONTACT FORM] Message received from ${name} <${email}>: "${message}"`);
 
-  // Check if Resend API Key is configured
+  // Check if Resend API Key is configured and Resend successfully initialized
   const apiKey = process.env.RESEND_API_KEY;
   const isConfigured = 
+    resend &&
     apiKey && 
     apiKey.startsWith("re_") &&
     apiKey !== "re_your_api_key_here" &&
@@ -49,10 +50,10 @@ app.post("/api/contact", async (req, res) => {
     apiKey.trim() !== "";
 
   if (!isConfigured) {
-    console.warn("[WARNING] RESEND_API_KEY is not configured in server/.env. Simulating message logged.");
+    console.warn("[WARNING] RESEND_API_KEY is not configured. Simulating message logged.");
     return res.json({ 
       success: true, 
-      message: "COMMS LOGGED (SIMULATED). Add RESEND_API_KEY to .env." 
+      message: "COMMS LOGGED (SIMULATED). Configure RESEND_API_KEY in environment." 
     });
   }
 
