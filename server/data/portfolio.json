@@ -1,0 +1,372 @@
+{
+  "profile": {
+    "name": "YASIRU UPANANDA",
+    "title": "AI/ML ENGINEER",
+    "tagline": "> BUILDING SCALABLE SOLUTIONS AND DIGITAL EXPERIENCES",
+    "location": "Kelaniya, Sri Lanka",
+    "email": "sasmithaupananda2221@gmail.com",
+    "phone": "+97 71 644 4822",
+    "availability": "Open to Opportunities",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+    "socials": [
+      {
+        "id": "github",
+        "url": "https://github.com",
+        "label": "GitHub"
+      },
+      {
+        "id": "linkedin",
+        "url": "https://linkedin.com",
+        "label": "LinkedIn"
+      },
+      {
+        "id": "twitter",
+        "url": "https://twitter.com",
+        "label": "Twitter"
+      },
+      {
+        "id": "email",
+        "url": "mailto:sasmithaupananda2221@gmail.com",
+        "label": "Email"
+      }
+    ]
+  },
+  "level": {
+    "current": 27,
+    "xp": 23450,
+    "xpMax": 35000
+  },
+  "stats": [
+    {
+      "label": "Projects",
+      "value": "18+"
+    },
+    {
+      "label": "Years Exp",
+      "value": "3+"
+    },
+    {
+      "label": "Tech Stack",
+      "value": "20+"
+    },
+    {
+      "label": "Lines of Code",
+      "value": "50K+"
+    }
+  ],
+  "reputation": {
+    "title": "CODE WARRIOR",
+    "description": "Clean Code. Smart Solutions.",
+    "metrics": [
+      {
+        "name": "Code Quality",
+        "value": 95
+      },
+      {
+        "name": "Problem Solving",
+        "value": 92
+      },
+      {
+        "name": "System Design",
+        "value": 90
+      },
+      {
+        "name": "Innovation",
+        "value": 88
+      }
+    ],
+    "radar": [
+      {
+        "subject": "Logic",
+        "value": 92
+      },
+      {
+        "subject": "Creativity",
+        "value": 85
+      },
+      {
+        "subject": "Speed",
+        "value": 88
+      },
+      {
+        "subject": "Teamwork",
+        "value": 90
+      },
+      {
+        "subject": "Adaptability",
+        "value": 87
+      },
+      {
+        "subject": "Focus",
+        "value": 94
+      }
+    ]
+  },
+  "skills": [
+    {
+      "category": "Frontend",
+      "level": 90,
+      "icon": "monitor",
+      "techs": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Tailwind"
+      ]
+    },
+    {
+      "category": "Backend",
+      "level": 88,
+      "icon": "server",
+      "techs": [
+        "Node.js",
+        "Express",
+        "Python",
+        "REST APIs"
+      ]
+    },
+    {
+      "category": "Databases",
+      "level": 85,
+      "icon": "database",
+      "techs": [
+        "MongoDB",
+        "PostgreSQL",
+        "Redis"
+      ]
+    },
+    {
+      "category": "Cloud",
+      "level": 82,
+      "icon": "cloud",
+      "techs": [
+        "AWS",
+        "Vercel",
+        "Docker"
+      ]
+    },
+    {
+      "category": "System Design",
+      "level": 86,
+      "icon": "network",
+      "techs": [
+        "Microservices",
+        "Caching",
+        "Load Balancing"
+      ]
+    },
+    {
+      "category": "DevOps",
+      "level": 80,
+      "icon": "cog",
+      "techs": [
+        "CI/CD",
+        "GitHub Actions",
+        "Kubernetes"
+      ]
+    },
+    {
+      "category": "Testing",
+      "level": 84,
+      "icon": "test",
+      "techs": [
+        "Jest",
+        "Cypress",
+        "Unit Testing"
+      ]
+    },
+    {
+      "category": "Tools",
+      "level": 92,
+      "icon": "wrench",
+      "techs": [
+        "Git",
+        "VS Code",
+        "Figma",
+        "Postman"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "devconnect",
+      "title": "DEVCONNECT",
+      "description": "Real-time developer networking platform with chat and collaboration features.",
+      "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=200&h=120&fit=crop",
+      "tags": [
+        "Next.js",
+        "Socket.io",
+        "MongoDB"
+      ],
+      "url": "#"
+    },
+    {
+      "id": "fintracker",
+      "title": "FINTRACKER",
+      "description": "Personal finance dashboard with expense tracking and analytics.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=120&fit=crop",
+      "tags": [
+        "React",
+        "Node.js",
+        "PostgreSQL"
+      ],
+      "url": "#"
+    },
+    {
+      "id": "taskforge",
+      "title": "TASKFORGE",
+      "description": "Kanban-style project management tool for agile teams.",
+      "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=200&h=120&fit=crop",
+      "tags": [
+        "TypeScript",
+        "Prisma",
+        "AWS"
+      ],
+      "url": "#"
+    },
+    {
+      "id": "aichat",
+      "title": "AI CHAT ASSISTANT",
+      "description": "LLM-powered chat interface with context memory and streaming.",
+      "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=200&h=120&fit=crop",
+      "tags": [
+        "Python",
+        "OpenAI",
+        "FastAPI"
+      ],
+      "url": "#"
+    }
+  ],
+  "traits": [
+    {
+      "name": "Logical Thinking",
+      "score": 95
+    },
+    {
+      "name": "Attention to Detail",
+      "score": 90
+    },
+    {
+      "name": "Communication",
+      "score": 88
+    },
+    {
+      "name": "Leadership",
+      "score": 85
+    },
+    {
+      "name": "Time Management",
+      "score": 92
+    }
+  ],
+  "achievements": [
+    {
+      "title": "LeetCode Knight",
+      "description": "Solved 500+ problems",
+      "year": 2023,
+      "icon": "trophy"
+    },
+    {
+      "title": "Hackathon Winner",
+      "description": "1st place at TechFest 2024",
+      "year": 2024,
+      "icon": "medal"
+    },
+    {
+      "title": "Open Source Contributor",
+      "description": "50+ merged PRs",
+      "year": 2023,
+      "icon": "code"
+    },
+    {
+      "title": "AWS Certified",
+      "description": "Solutions Architect Associate",
+      "year": 2024,
+      "icon": "cloud"
+    }
+  ],
+  "abilities": [
+    {
+      "title": "PROBLEM SOLVER",
+      "description": "Breaks down complex challenges into actionable solutions.",
+      "icon": "brain"
+    },
+    {
+      "title": "FAST LEARNER",
+      "description": "Quickly adapts to new technologies and frameworks.",
+      "icon": "zap"
+    },
+    {
+      "title": "TEAM PLAYER",
+      "description": "Collaborates effectively in cross-functional teams.",
+      "icon": "users"
+    },
+    {
+      "title": "INNOVATOR",
+      "description": "Brings creative ideas to product and architecture.",
+      "icon": "lightbulb"
+    }
+  ],
+  "techStack": [
+    {
+      "name": "JavaScript",
+      "icon": "javascript",
+      "color": "#F7DF1E"
+    },
+    {
+      "name": "TypeScript",
+      "icon": "typescript",
+      "color": "#3178C6"
+    },
+    {
+      "name": "React",
+      "icon": "react",
+      "color": "#61DAFB"
+    },
+    {
+      "name": "Next.js",
+      "icon": "next.js",
+      "color": "#ffffff"
+    },
+    {
+      "name": "Node.js",
+      "icon": "node.js",
+      "color": "#339933"
+    },
+    {
+      "name": "Python",
+      "icon": "python",
+      "color": "#3776AB"
+    },
+    {
+      "name": "Tailwind",
+      "icon": "tailwindcss",
+      "color": "#06B6D4"
+    },
+    {
+      "name": "MongoDB",
+      "icon": "mongodb",
+      "color": "#47A248"
+    },
+    {
+      "name": "PostgreSQL",
+      "icon": "postgresql",
+      "color": "#4169E1"
+    },
+    {
+      "name": "AWS",
+      "icon": "aws",
+      "color": "#FF9900"
+    },
+    {
+      "name": "Docker",
+      "icon": "docker",
+      "color": "#2496ED"
+    },
+    {
+      "name": "Git",
+      "icon": "git",
+      "color": "#F05032"
+    }
+  ]
+}
