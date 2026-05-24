@@ -17,9 +17,22 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
-const portfolio = JSON.parse(
-  readFileSync(join(__dirname, "data", "portfolio.json"), "utf-8")
-);
+let portfolio;
+try {
+  // First attempt: read using __dirname (relative to server/index.js)
+  const path1 = join(__dirname, "data", "portfolio.json");
+  portfolio = JSON.parse(readFileSync(path1, "utf-8"));
+} catch (err1) {
+  console.warn(`[WARNING] Failed to load portfolio using __dirname: ${err1.message}`);
+  try {
+    // Second attempt: read using process.cwd() (useful for root-relative paths on Vercel)
+    const path2 = join(process.cwd(), "server", "data", "portfolio.json");
+    portfolio = JSON.parse(readFileSync(path2, "utf-8"));
+  } catch (err2) {
+    console.error(`[ERROR] Failed to load portfolio data: ${err2.message}`);
+    portfolio = { error: "Portfolio data unavailable" };
+  }
+}
 
 // Initialize Resend safely with API Key (prevents crash on startup if undefined)
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;

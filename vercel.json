@@ -5,7 +5,7 @@
       "src": "server/index.js",
       "use": "@vercel/node",
       "config": {
-        "includeFiles": ["server/data/portfolio.json"]
+        "includeFiles": ["data/portfolio.json"]
       }
     },
     {
